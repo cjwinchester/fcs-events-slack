@@ -15,7 +15,7 @@ text = 'fort calhoun'
 r = requests.get(url)
 r.raise_for_status()
 
-if text in r.text.casefold():
+if text.casefold() in r.text.casefold():
 
     slack_hook = os.environ.get('NCC_SLACK_WEBHOOK')
 
