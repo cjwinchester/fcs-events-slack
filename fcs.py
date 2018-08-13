@@ -4,11 +4,11 @@ from datetime import date
 
 import requests
 
+
 today = date.today()
 y, m, d = today.year, str(today.month).zfill(2), str(today.day).zfill(2)
 
-url = ('https://www.nrc.gov/reading-rm/doc-collections/'
-       'event-status/event/{y}/{y}{m}{d}en.html'.format(y=y, m=m, d=d))
+url = f'https://www.nrc.gov/reading-rm/doc-collections/event-status/event/{y}/{y}{m}{d}en.html'
 
 text = 'fort calhoun'
 
