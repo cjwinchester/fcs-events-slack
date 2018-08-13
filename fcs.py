@@ -23,7 +23,7 @@ if text.casefold() in r.text.casefold():
         'channel': '#fcs-alerts',
         'username': 'FCS bot',
         'icon_emoji': ':warning:',
-        'text': 'I found a new reportable event at FCS: {}'.format(url)
+        'text': f'I found a new reportable event for FCS: {url}'
     }
 
     payload_as_json = json.dumps(payload)
